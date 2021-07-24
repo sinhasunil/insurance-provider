@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/insurnace-service")
 public class InsuranceProviderApplication {
 
-	@GetMapping("/Neeraja")
+	@GetMapping("/getPlane")
 	public List<String> getPlans() {
 		return Stream.of("Premium", "Gold", "Platinum","Diamond").collect(Collectors.toList());
 
@@ -23,5 +23,6 @@ public class InsuranceProviderApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InsuranceProviderApplication.class, args);
+		System.out.println("InsuranceProviderApplication......");
 	}
 }
