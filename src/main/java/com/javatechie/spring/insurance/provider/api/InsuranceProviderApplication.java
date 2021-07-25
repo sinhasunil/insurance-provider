@@ -17,12 +17,12 @@ public class InsuranceProviderApplication {
 
 	@GetMapping("/getPlane")
 	public List<String> getPlans() {
-		return Stream.of("Premium", "Gold", "Platinum","Diamond").collect(Collectors.toList());
+		return Stream.of("Premium", "Gold", "Platinum","Diamond","Iron","Silver","Hg").collect(Collectors.toList());
 
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(InsuranceProviderApplication.class, args);
-		System.out.println("InsuranceProviderApplication......");
+		System.out.println("InsuranceProviderApplication...... Third time changes");
 	}
 }
